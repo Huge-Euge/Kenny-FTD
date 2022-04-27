@@ -1,1 +1,151 @@
-
+{
+    "Actor": {
+        "types": [
+            "PC",
+            "NPC",
+            "Generic"
+        ],
+        "templates": {
+            "background": {
+                "biography": ""
+            },
+            "resources": {
+                "name": "place holder",
+                "hit-points": {
+                    "min": 0,
+                    "value": 10,
+                    "max": 10
+                },
+                "armour-class": {
+                    "value": 1,
+                    "max": 22
+                },
+                "speed": 30
+            },
+            "simple-resources": {
+                "HD": 1,
+                "category": "Brute",
+                "techniques": []
+            }
+        },
+        "PC": {
+            "templates": [
+                "background",
+                "resources"
+            ],
+            "abilities": {
+                "str": {
+                    "value": 10,
+                    "max": 10,
+                    "proficient": 0
+                },
+                "dex": {
+                    "value": 10,
+                    "max": 10,
+                    "proficient": 0
+                },
+                "con": {
+                    "value": 10,
+                    "max": 10,
+                    "proficient": 0
+                },
+                "int": {
+                    "value": 10,
+                    "max": 10,
+                    "proficient": 0
+                },
+                "wis": {
+                    "value": 10,
+                    "max": 10,
+                    "proficient": 0
+                },
+                "cha": {
+                    "value": 10,
+                    "max": 10,
+                    "proficient": 0
+                }
+            },
+            "XP": 0,
+            "race": "",
+            "class": "",
+            "archetype": "",
+            "sup": {
+                "value": 0,
+                "max": 10
+            },
+            "load": {
+                "value": 0,
+                "max": 10
+            },
+            "retainers": {
+                "value": 0,
+                "max": 10
+            },
+            "magic-items": {
+                "value": 0,
+                "max": 10
+            },
+            "resilience": {
+                "value": 0,
+                "max": 10
+            },
+            "proficiencies": {
+                "armour": "",
+                "weapons": "",
+                "class": "",
+                "archetype": ""
+            },
+            "spellbook": {
+                "casts-spells": false,
+                "spells-known": {
+                    "1st": 0,
+                    "2nd": 0,
+                    "3rd": 0,
+                    "4th": 0,
+                    "5th": 0
+                }
+            }
+        },
+        "NPC": {
+            "templates": [
+                "background",
+                "resources",
+                "simple-resources"
+            ]
+        },
+        "Generic": {
+            "templates": [
+                "resources",
+                "simple-resources"
+            ]
+        }
+    },
+    "Item": {
+        "types": [
+            "item",
+            "spell"
+        ],
+        "templates": {
+            "basic": {
+                "name": "place holder",
+                "description": "place holder"
+            }
+        },
+        "item": {
+            "templates": [
+                "basic"
+            ],
+            "load": 1,
+            "gold-value": 500,
+            "sup": 0,
+            "dur": 0,
+            "dur-max": 0
+        },
+        "spell": {
+            "templates": [
+                "basic"
+            ],
+            "level": 0
+        }
+    }
+}

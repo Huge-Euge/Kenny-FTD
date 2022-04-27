@@ -1,0 +1,41 @@
+incorporate the resources.health and resources.armour-class attributes in the system data module (referred to in system.json)
+
+url, manifest, and download are all fake, default name/value pairs in system.json
+
+Implement a <notes> field into the resources object in template.json so that notes about actors can be stored
+
+Implement the inventory array in template.json to be an array of objects with load, name, gold-value, etc
+
+Implement a weapons array in template.json including name, prof, ability-to-hit, hit-bonus, damage-dice, ability-to-damage
+
+Implement a spells array similar to weapons
+
+Implement a miscast checkbox to show the player when they can cast spells of a certain level
+
+Implement a divine/arcane checkbox
+
+remember, XP can determine level and proficiency bonus
+
+I am operating under the assumption that I will use the types of <Generic> and <NPC> to determine some scripting stuff, they are very similar in template.json
+
+It may be wise to incorporate a <retainer> actor type at some point
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LOAD automation
