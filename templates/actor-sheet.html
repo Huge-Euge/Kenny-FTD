@@ -1,0 +1,17 @@
+<form class="flexcol {{cssclass}}">
+    {{!-- This is the form of a Handlebars comment --}}
+    {{!-- Sheet Header --}}
+    <header class="sheet-header">
+        <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}" alt="{{data.name}}" height="100" width="100">
+        <div class="header-fields">
+            <h1 class="charname">
+                <input name="name" type="text" value="{{data.name}}" placeholder="Name" />
+            </h1>
+            <div class="resource">
+                <input type="number" name="data.hit-points.value" value="{{systemData.hit-points.value}}"/>
+                <span> / </span>
+                <input type="number" name="data.hit-points.max" value="{{systemData.hit-points.max}}"/>
+            </div>
+        </div>
+    </header>
+</form>
