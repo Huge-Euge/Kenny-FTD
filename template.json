@@ -15,10 +15,7 @@
                     "value": 10,
                     "max": 10
                 },
-                "armour-class": {
-                    "value": 1,
-                    "max": 22
-                },
+                "armour-class": 10,
                 "speed": 30
             },
             "simple-resources": {
@@ -65,6 +62,7 @@
                 }
             },
             "XP": 0,
+            "level": 0,
             "race": "",
             "class": "",
             "archetype": "",
