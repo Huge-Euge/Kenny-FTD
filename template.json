@@ -10,7 +10,6 @@
                 "biography": ""
             },
             "resources": {
-                "name": "place holder",
                 "hit-points": {
                     "min": 0,
                     "value": 10,
@@ -126,14 +125,9 @@
             "spell"
         ],
         "templates": {
-            "basic": {
-                "name": "place holder",
-                "description": "place holder"
-            }
         },
         "item": {
             "templates": [
-                "basic"
             ],
             "load": 1,
             "gold-value": 500,
@@ -143,7 +137,6 @@
         },
         "spell": {
             "templates": [
-                "basic"
             ],
             "level": 0
         }
