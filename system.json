@@ -6,7 +6,8 @@
     "templateVersion": 2,
     "author": "Kenny Jensen",
     "scripts": [
-        "scripts/system-script.js"
+        "scripts/system-script.js",
+        "scripts/ftd.js"
     ],
     "esmodules": [
         "scripts/system-module-1.mjs"
