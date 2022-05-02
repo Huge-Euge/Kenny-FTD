@@ -1,9 +1,9 @@
 {
     "Actor": {
         "types": [
-            "PC",
-            "NPC",
-            "Generic"
+            "pc",
+            "npc",
+            "generic"
         ],
         "templates": {
             "background": {
@@ -24,7 +24,7 @@
                 "techniques": []
             }
         },
-        "PC": {
+        "pc": {
             "templates": [
                 "background",
                 "resources"
@@ -103,14 +103,14 @@
                 }
             }
         },
-        "NPC": {
+        "npc": {
             "templates": [
                 "background",
                 "resources",
                 "simple-resources"
             ]
         },
-        "Generic": {
+        "generic": {
             "templates": [
                 "resources",
                 "simple-resources"

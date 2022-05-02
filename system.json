@@ -1,5 +1,5 @@
 {
-    "name": "Kenny-FTD",
+    "name": "ftd",
     "title": "Five Torches Deep",
     "description": "Many details here.",
     "version": "0.1",
@@ -7,7 +7,7 @@
     "author": "Kenny Jensen",
     "scripts": [],
     "esmodules": [
-        "scripts/ftd.js"
+        "ftd.js"
     ],
     "styles": [],
     "packs": [

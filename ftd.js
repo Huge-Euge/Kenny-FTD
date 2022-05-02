@@ -5,11 +5,11 @@
 
 console.log("ftd | Initialising the ftd system implemented by Kenny Jensen");
 
-import { FTDItemSheet } from "../module/sheets/FTDItemSheet";
+import { FTDItemSheet } from "./module/sheets/FTDItemSheet.js";
 
 Hooks.once("init", async function () {
-    console.log("ftd | Initialising the ftd system implemented by Kenny Jensen");
+    console.log("ftd | Initialising the ftd system implemented by Kenny J");
 
     Items.unregisterSheet("core", ItemSheet)
-    Items.registerSheet("Kenny-FTD", FTDItemSheet, { makeDefault: true })
+    Items.registerSheet("ftd", FTDItemSheet, { makeDefault: true })
 });
