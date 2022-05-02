@@ -1,25 +1,22 @@
 {{!-- This is the form of a Handlebars comment --}}
 {{!-- TODO, figure out where the Handlebars fields are retrieved from --}}
-{{!-- NOTE: the structure of the actors can be found in C:\Users\eugen\AppData\Local\FoundryVTT\Data\worlds\test-simple-worldbuilding\data --}}
+{{!-- NOTE: the structure of the actors can be found in
+C:\Users\eugen\AppData\Local\FoundryVTT\Data\worlds\test-simple-worldbuilding\data --}}
 {{!-- TODO, remove CSS class charname, add LeftCol, add flexcol-pc-sheet --}}
-{{!-- TODO to make a character sheet render I need to make a js file to handle the logic of it, I need to find foundry.utils}}
+{{!-- TODO to make a character sheet render I need to make a js file to handle the logic of it, I need to find
+foundry.utils}}
 
 <form class="flexcol-pc-sheet">
     {{!-- Sheet left-col --}}
     <div class="left-col">
 
         <div class="img-and-header">
-            <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}" alt="{{data.name}}" height="100" width="100">
+            <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}" alt="{{data.name}}"
+                height="100" width="100">
             <input type="text" name="name" value="{{data.name}}" placeholder="Name" />
             <input type="text" name="data.race" value="{{data.race}}" />
             <input type="text" name="data.class" value="{{data.class}}" />
             <input type="text" name="data.archetype" value="{{data.archetype}}" />
-        </div>
-        
-        <div class="header-fields">
-            <h1 class="details_block">
-                <input name="name" type="text" value="{{data.name}}" placeholder="Booty" />
-            </h1>
         </div>
     </div>
 </form>

@@ -123,9 +123,13 @@
             "spell"
         ],
         "templates": {
+            "basic": {
+                "description": "Placeholder"
+            }
         },
         "item": {
             "templates": [
+                "basic"
             ],
             "load": 1,
             "gold-value": 500,
@@ -135,6 +139,7 @@
         },
         "spell": {
             "templates": [
+                "basic"
             ],
             "level": 0
         }

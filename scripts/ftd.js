@@ -3,10 +3,13 @@
  * the init hook loads in the new character sheet for now, and that is all
  */
 
-import { PCSheet } from "./pc-sheet";
+console.log("ftd | Initialising the ftd system implemented by Kenny Jensen");
 
-Hooks.once("init", async function(){
-    Actors.unregisterSheet("core", ActorSheet);
-    Actors.registerSheet("core", PCSheet, { makeDefault: true });
-    console.log("ass");
+import { FTDItemSheet } from "../module/sheets/FTDItemSheet";
+
+Hooks.once("init", async function () {
+    console.log("ftd | Initialising the ftd system implemented by Kenny Jensen");
+
+    Items.unregisterSheet("core", ItemSheet)
+    Items.registerSheet("Kenny-FTD", FTDItemSheet, { makeDefault: true })
 });

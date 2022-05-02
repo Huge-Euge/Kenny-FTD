@@ -1,5 +1,3 @@
-incorporate the resources.health and resources.armour-class attributes in the system data module (referred to in system.json)
-
 url, manifest, and download are all fake, default name/value pairs in system.json
 
 Implement a <notes> field into the resources object in template.json so that notes about actors can be stored
