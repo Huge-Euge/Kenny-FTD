@@ -6,17 +6,17 @@ C:\Users\eugen\AppData\Local\FoundryVTT\Data\worlds\test-simple-worldbuilding\da
 {{!-- TODO to make a character sheet render I need to make a js file to handle the logic of it, I need to find
 foundry.utils}}
 
-<form class="flexcol-pc-sheet">
+<form class="{{cssClass}}" autocomplete="off">
     {{!-- Sheet left-col --}}
     <div class="left-col">
 
         <div class="img-and-header">
-            <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}" alt="{{data.name}}"
+            <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" alt="{{actor.name}}"
                 height="100" width="100">
-            <input type="text" name="name" value="{{data.name}}" placeholder="Name" />
-            <input type="text" name="data.race" value="{{data.race}}" />
-            <input type="text" name="data.class" value="{{data.class}}" />
-            <input type="text" name="data.archetype" value="{{data.archetype}}" />
+            <input type="text" name="name" value="{{actor.name}}" placeholder="Name" />
+            <input type="text" name="race" value="{{actor.race}}" />
+            <input type="text" name="class" value="{{actor.class}}" />
+            <input type="text" name="archetype" value="{{actor.archetype}}" />
         </div>
     </div>
 </form>
