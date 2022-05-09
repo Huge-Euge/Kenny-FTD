@@ -5,7 +5,7 @@
 export class PCSheet extends ActorSheet {
 
     get template() {
-        return `systems/ftd/templates/sheets/${this.actor.data.type}-sheet.html`;
+        return `systems/ftd/templates/sheets/pc-sheet.html`;
     }
 
     /**
@@ -13,11 +13,17 @@ export class PCSheet extends ActorSheet {
      * but then it adds a config property to the object returned by the method.
      * @returns 
      */
+
     getData() {
-        const data = super.getData();
+        const baseData = super.getData();
 
-        data.config = CONFIG.ftd;
-
-        return data;
+        let sheetData = {
+            owner: this.actor.isOwner,
+            editable: this.isEditable,
+            actor: baseData.actor,
+            data: baseData.actor.data.data,
+            config: CONFIG.ftd
+        };
+        return sheetData;
     }
 }
