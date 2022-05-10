@@ -4,8 +4,6 @@ Implement a <notes> field into the resources object in template.json so that not
 
 Implement the inventory array in template.json to be an array of objects with load, name, gold-value, etc
 
-Implement a weapons array in template.json including name, prof, ability-to-hit, hit-bonus, damage-dice, ability-to-damage
-
 Implement a spells array similar to weapons
 
 Implement a miscast checkbox to show the player when they can cast spells of a certain level
@@ -18,22 +16,17 @@ I am operating under the assumption that I will use the types of <Generic> and <
 
 It may be wise to incorporate a <retainer> actor type at some point
 
+Fill in the NPC variant strengths and weaknesses
 
+Figure out how to do an Add/Modify setup for items, attacks, spells, and NPC techniques
 
+Spell Automation including area effects and stuff - also reuse for NPC techniques
 
+LOAD automation for the inventory
 
+Attack automation with targeting, range, etc
 
+Travel Roll automation with ref to rollable travel tables
 
+Token stat automation
 
-
-
-
-
-
-
-
-
-
-
-
-LOAD automation

@@ -6,6 +6,7 @@
 //this import { ftd } statement refers to the object containing all of the localised strings
 import { ftd } from "./module/config.js";
 import { FTDItemSheet } from "./module/sheets/FTDItemSheet.js";
+import { PCSheet } from "./module/sheets/pc-sheet.js";
 
 Hooks.once("init", async function () {
     console.log("ftd | Initialising the ftd system implemented by Kenny J");
@@ -16,6 +17,9 @@ Hooks.once("init", async function () {
      */
     CONFIG.ftd = ftd;
 
-    Items.unregisterSheet("core", ItemSheet)
-    Items.registerSheet("ftd", FTDItemSheet, { makeDefault: true })
+    Items.unregisterSheet("core", ItemSheet);
+    Items.registerSheet("ftd", FTDItemSheet, { makeDefault: true });
+
+    Actors.unregisterSheet("core", ActorSheet);
+    Actors.registerSheet("ftd", PCSheet, { makeDefault: true })
 });
