@@ -1,12 +1,13 @@
-{{!-- This is the form of a Handlebars comment --}}
-{{!-- TODO, figure out where the Handlebars fields are retrieved from --}}
-{{!-- NOTE: the structure of the actors can be found in
-C:\Users\eugen\AppData\Local\FoundryVTT\Data\worlds\test-simple-worldbuilding\data --}}
-{{!-- TODO, remove CSS class charname, add LeftCol, add flexcol-pc-sheet --}}
-{{!-- TODO to make a character sheet render I need to make a js file to handle the logic of it, I need to find
-foundry.utils}}
-
 <form class="{{cssClass}}" autocomplete="off">
+
+    {{!-- This is the form of a Handlebars comment --}}
+    {{!-- TODO, figure out where the Handlebars fields are retrieved from --}}
+    {{!-- NOTE: the structure of the actors can be found in
+    C:\Users\eugen\AppData\Local\FoundryVTT\Data\worlds\test-simple-worldbuilding\data --}}
+    {{!-- TODO, remove CSS class charname, add LeftCol, add flexcol-pc-sheet --}}
+    {{!-- TODO to make a character sheet render I need to make a js file to handle the logic of it, I need to find
+    foundry.utils}}
+
     {{!-- Sheet left-col --}}
     <div class="left-col">
 
@@ -14,9 +15,9 @@ foundry.utils}}
             <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" alt="{{actor.name}}"
                 height="100" width="100">
             <input type="text" name="data.name" value="{{actor.name}}" placeholder="Name" />
-            <input type="text" name="data.race" value="{{actor.race}}" />
-            <input type="text" name="data.class" value="{{actor.class}}" />
-            <input type="text" name="data.archetype" value="{{actor.archetype}}" />
+            <input type="text" name="data.race" value="{{data.race}}" placeholder="Race" />
+            <input type="text" name="data.class" value="{{data.class}}" />
+            <input type="text" name="data.archetype" value="{{data.archetype}}" />
         </div>
     </div>
 </form>
