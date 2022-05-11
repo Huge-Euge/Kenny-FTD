@@ -5,6 +5,7 @@
 
 //this import { ftd } statement refers to the object containing all of the localised strings
 import { ftd } from "./module/config.js";
+import { Helper } from "./module/Helper.js";
 import { FTDItemSheet } from "./module/sheets/FTDItemSheet.js";
 import { PCSheet } from "./module/sheets/pc-sheet.js";
 

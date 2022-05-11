@@ -9,7 +9,7 @@
     "esmodules": [
         "ftd.js"
     ],
-    "styles": [],
+    "styles": ["styles/system-styles.css"],
     "packs": [
         {
             "name": "monsters",
