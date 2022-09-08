@@ -28,5 +28,6 @@ Attack automation with targeting, range, etc
 
 Travel Roll automation with ref to rollable travel tables
 
-Token stat automation
+Token stat automation ??? make BETTER NOTES
 
+Rest Automation
