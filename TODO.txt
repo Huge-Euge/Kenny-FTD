@@ -1,10 +1,8 @@
 url, manifest, and download are all fake, default name/value pairs in system.json
 
-Implement a <notes> field into the resources object in template.json so that notes about actors can be stored
-
 Implement the inventory array in template.json to be an array of objects with load, name, gold-value, etc
 
-Implement a spells array similar to weapons
+Implement a spells array similar to weapons including dice and target DC
 
 Implement a miscast checkbox to show the player when they can cast spells of a certain level
 
@@ -23,6 +21,8 @@ Figure out how to do an Add/Modify setup for items, attacks, spells, and NPC tec
 Spell Automation including area effects and stuff - also reuse for NPC techniques
 
 LOAD automation for the inventory
+
+TODO fields for the weak, normal, strong rolls for an NPC sheet
 
 Attack automation with targeting, range, etc
 

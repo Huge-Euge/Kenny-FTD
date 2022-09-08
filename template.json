@@ -7,7 +7,8 @@
         ],
         "templates": {
             "background": {
-                "biography": ""
+                "biography": "",
+                "notes": ""
             },
             "resources": {
                 "hit-points": {
@@ -122,15 +123,10 @@
             "item",
             "spell"
         ],
-        "templates": {
-            "basic": {
-                "description": ""
-            }
-        },
+        "templates": {},
         "item": {
-            "templates": [
-                "basic"
-            ],
+            "templates": [],
+            "description": "",
             "load": 1,
             "gold-value": 500,
             "sup": 0,
@@ -138,9 +134,8 @@
             "dur-max": 0
         },
         "spell": {
-            "templates": [
-                "basic"
-            ],
+            "templates": [],
+            "description": "",
             "level": 0
         }
     }
