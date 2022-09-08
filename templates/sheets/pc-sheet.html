@@ -2,22 +2,65 @@
 
     {{!-- This is the form of a Handlebars comment --}}
     {{!-- TODO, figure out where the Handlebars fields are retrieved from --}}
+    {{!-- DONE The handlebars info comes from the getData function that I overrided in pc-sheet.js --}}
     {{!-- NOTE: the structure of the actors can be found in
     C:\Users\eugen\AppData\Local\FoundryVTT\Data\worlds\test-simple-worldbuilding\data --}}
     {{!-- TODO, remove CSS class charname, add LeftCol, add flexcol-pc-sheet --}}
-    {{!-- TODO to make a character sheet render I need to make a js file to handle the logic of it, I need to find
-    foundry.utils}}
 
-    {{!-- Sheet left-col --}}
-    <div class="left-col">
-
-        <div class="img-and-header">
-            <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" alt="{{actor.name}}"
-                height="100" width="100">
-            <input type="text" name="data.name" value="{{actor.name}}" placeholder="Name" />
-            <input type="text" name="data.race" value="{{data.race}}" placeholder="Race" />
-            <input type="text" name="data.class" value="{{data.class}}" />
-            <input type="text" name="data.archetype" value="{{data.archetype}}" />
+    <div class="img-and-header">
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" alt="{{actor.name}}">
+        <div class="details">
+            <div class="details-row">
+                <label id="label-name" for="actor-name">{{ localize 'ftd.name' }}</label>
+                <input id="actor-name" type="text" name="name" value="{{actor.name}}"/>
+                <label id="label-race" for="data-race">{{ localize 'ftd.race' }}</label>
+                <input id="data-race" type="text" name="data.race" value="{{data.race}}" />
+            </div>
+            <div class="details-row">
+                <label id="label-class" for="actor-class">{{ localize 'ftd.class' }}</label>
+                <input id="data-class" type="text" name="data.class" value="{{data.class}}"/>
+                <label id="label-archetype" for="data-archetype">{{ localize 'ftd.archetype' }}</label>
+                <input id="data-archetype" type="text" name="data.archetype" value="{{data.archetype}}" />
+                <label id="label-XP" for="data-XP">{{ localize 'ftd.XP' }}</label>
+                <input id="data-XP" type="text" name="data.XP" value="{{data.XP}}" />
+                <label id="label-level" for="data-level">{{ localize 'ftd.level' }}</label>
+                <input id="data-level" type="text" value="{{data.level}}" />
+            </div>
         </div>
+        
+    </div>
+
+    <div class="button-region">
+        <div class="button-zone">
+            <input type="button" value="{{data.strMod}}">
+            <input type="number" name="data.abilities.str.value" value="{{data.abilities.str.value}}">
+            <input type="number" name="data.abilities.str.max" value="{{data.abilities.str.max}}">
+        </div>
+        <div class="button-zone">
+            <input type="button" value="{{data.dexMod}}">
+            <input type="number" name="data.abilities.dex.value" value="{{data.abilities.dex.value}}">
+            <input type="number" name="data.abilities.dex.max" value="{{data.abilities.dex.max}}">
+        </div>
+        <div class="button-zone">
+            <input type="button" value="{{data.conMod}}">
+            <input type="number" name="data.abilities.con.value" value="{{data.abilities.con.value}}">
+            <input type="number" name="data.abilities.con.max" value="{{data.abilities.con.max}}">
+        </div>
+        <div class="button-zone">
+            <input type="button" value="{{data.intMod}}">
+            <input type="number" name="data.abilities.int.value" value="{{data.abilities.int.value}}">
+            <input type="number" name="data.abilities.int.max" value="{{data.abilities.int.max}}">
+        </div>
+        <div class="button-zone">
+            <input type="button" value="{{data.wisMod}}">
+            <input type="number" name="data.abilities.wis.value" value="{{data.abilities.wis.value}}">
+            <input type="number" name="data.abilities.wis.max" value="{{data.abilities.wis.max}}">
+        </div>
+        <div class="button-zone">
+            <input type="button" value="{{data.chaMod}}">
+            <input type="number" name="data.abilities.cha.value" value="{{data.abilities.cha.value}}">
+            <input type="number" name="data.abilities.cha.max" value="{{data.abilities.cha.max}}">
+        </div>
+        
     </div>
 </form>
