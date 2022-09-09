@@ -9,7 +9,7 @@
 .img-and-header .profile-img {
     width: 16%;
     height: 16%;
-    
+
     /* display: inline-block; */
     box-sizing: border-box;
 }
@@ -17,7 +17,7 @@
 .img-and-header .details {
     width: 83%;
     overflow: hidden;
-    
+
     /* display: inline-block; */
     box-sizing: border-box;
 }
@@ -45,7 +45,9 @@
     flex-basis: 60%;
 }
 
-.details-row #data-race, .details-row #data-class, .details-row #data-archetype {
+.details-row #data-race,
+.details-row #data-class,
+.details-row #data-archetype {
     flex-grow: 2;
     flex-basis: 20%;
 }
@@ -60,5 +62,37 @@
     flex-basis: 5%;
 }
 
+.button-mod {
+    width: 100%;
+    padding: 5px 0 10px 0;
+    text-align: center;
+    margin: auto;
+    font-size: xx-large;
+    font-weight: bolder;
+}
 
+.button-region {
+    box-sizing: border-box;
+    display: flex;
+}
 
+.button-region .button-zone {
+    box-sizing: border-box;
+    flex: 1;
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.button-region .button-zone .min-max-row {
+    display: flex;
+    text-align: center;
+
+    font-size: medium;
+    font-weight: normal;
+}
+
+.button-region .button-zone .min-max-row input {
+    box-sizing: border-box;
+    flex: 1;
+}

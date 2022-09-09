@@ -30,4 +30,6 @@ Travel Roll automation with ref to rollable travel tables
 
 Token stat automation ??? make BETTER NOTES
 
-Rest Automation
+Short/Long Rest Automation (healing, spells)
+
+Give Items functionality to transfer to brandons

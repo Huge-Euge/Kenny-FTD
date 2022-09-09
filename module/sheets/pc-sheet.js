@@ -7,7 +7,7 @@ import { Helper } from "../Helper.js";
 export class PCSheet extends ActorSheet {
 
     get template() {
-        return `systems/ftd/templates/sheets/pc-sheet.html`;
+        return `systems/ftd/templates/sheets/pc-sheet.hbs`;
     }
 
     /**

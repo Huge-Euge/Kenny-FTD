@@ -12,13 +12,13 @@
         <div class="details">
             <div class="details-row">
                 <label id="label-name" for="actor-name">{{ localize 'ftd.name' }}</label>
-                <input id="actor-name" type="text" name="name" value="{{actor.name}}"/>
+                <input id="actor-name" type="text" name="name" value="{{actor.name}}" />
                 <label id="label-race" for="data-race">{{ localize 'ftd.race' }}</label>
                 <input id="data-race" type="text" name="data.race" value="{{data.race}}" />
             </div>
             <div class="details-row">
                 <label id="label-class" for="actor-class">{{ localize 'ftd.class' }}</label>
-                <input id="data-class" type="text" name="data.class" value="{{data.class}}"/>
+                <input id="data-class" type="text" name="data.class" value="{{data.class}}" />
                 <label id="label-archetype" for="data-archetype">{{ localize 'ftd.archetype' }}</label>
                 <input id="data-archetype" type="text" name="data.archetype" value="{{data.archetype}}" />
                 <label id="label-XP" for="data-XP">{{ localize 'ftd.XP' }}</label>
@@ -27,19 +27,25 @@
                 <input id="data-level" type="text" value="{{data.level}}" />
             </div>
         </div>
-        
+
     </div>
 
     <div class="button-region">
+        {{!-- TODO The plan is to have a large clickable button with two input fields on the bottom for current and max
+        ability scores. The button-zone class can be used as the clickable element.
+        TODO add the proficiency checkbox--}}
         <div class="button-zone">
-            <input type="button" value="{{data.strMod}}">
-            <input type="number" name="data.abilities.str.value" value="{{data.abilities.str.value}}">
-            <input type="number" name="data.abilities.str.max" value="{{data.abilities.str.max}}">
+            <p>{{localize 'ftd.abilityAbbrSTR'}}</p>
+            <p class="button-mod">{{data.strMod}}</p>
+            <div class="min-max-row">
+                <input type="number" name="data.abilities.str.value" value="{{data.abilities.str.value}}">/<input
+                    type="number" name="data.abilities.str.max" value="{{data.abilities.str.max}}">
+            </div>
         </div>
         <div class="button-zone">
             <input type="button" value="{{data.dexMod}}">
-            <input type="number" name="data.abilities.dex.value" value="{{data.abilities.dex.value}}">
-            <input type="number" name="data.abilities.dex.max" value="{{data.abilities.dex.max}}">
+            <p><input type="number" name="data.abilities.dex.value" value="{{data.abilities.dex.value}}">/<input
+                    type="number" name="data.abilities.dex.max" value="{{data.abilities.dex.max}}"></p>
         </div>
         <div class="button-zone">
             <input type="button" value="{{data.conMod}}">
@@ -61,6 +67,6 @@
             <input type="number" name="data.abilities.cha.value" value="{{data.abilities.cha.value}}">
             <input type="number" name="data.abilities.cha.max" value="{{data.abilities.cha.max}}">
         </div>
-        
+
     </div>
 </form>
